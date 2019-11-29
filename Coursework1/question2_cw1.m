@@ -22,7 +22,7 @@ noplus=n0+nr;
 ejbdm=exp((-1)*1j*betad);
 ejbdp=exp(1j*betad);
 
-ratioT=abs((2*1j*sin(betad))/(((noplus/nominus)*ejbdm)-((nominus/noplus)*ejbdp))); %Transmitted Ratio
-ratioR=(1-ratioT)*100; %Reflected Ratio
+ratioR=abs((2*1j*sin(betad))/(((noplus/nominus)*ejbdm)-((nominus/noplus)*ejbdp))); %Reflection Ratio
+ratioPR=(ratioR^2)*100; %Power Reflection percentage
 
 %\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
